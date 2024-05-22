@@ -1,0 +1,166 @@
+*{
+    padding : 0;
+    margin : 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #bdc3c7;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.musicPlayer{
+    background: #2c3e50;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+    box-shadow: 0px 0px 47px 2px #2c3e50;
+}
+
+nav{
+    display : flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width : 40px;
+    height : 40px;
+    line-height: 40px;
+    background: #fff;
+    color : #2c3e50;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.22);
+}
+
+
+nav .circle{
+    cursor : pointer;
+}
+
+
+.songImg{
+    width: 220px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 10px 60px rgba(255, 255, 255, 0.22);
+}
+
+.musicPlayer h1{
+    font-weight: 800;
+    font-size: 20px;
+    color : white;
+    margin-top: 20px;
+}
+
+.musicPlayer p{
+    font-size: 14px;
+    color : white;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    margin : 40px 0;
+}
+
+
+#progress::-webkit-slider-thumb, #progress::-moz-range-thumb{
+    -webkit-appearance: none;
+    background: #2c3e50;
+    width: 15px;
+    height: 15px;
+    border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+    border : 4px solid white;
+    box-shadow: 0 10px 60px rgba(255, 255, 255, 0.22);
+}
+
+.controls{
+    display : flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+    color : #2c3e50 ;
+    box-shadow: 0 10px 60px rgba(255, 255, 255, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    background : #2c3e50;
+    color : white;
+    border : 1px solid white;
+}
+
+/*ROTATING ALBUM ART*/
+.rotate{
+    animation: rotate linear infinite;
+    -webkit-animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+} to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
